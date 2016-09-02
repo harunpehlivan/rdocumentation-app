@@ -451,7 +451,8 @@ module.exports = {
                     {
                       has_parent : {
                         parent_type : "package_version",
-                        query : {  term : { latest_version : 1 } }
+                        query : {  term : { latest_version : 1 } },
+                        inner_hits : { fields: ['package_name', 'version', 'latest_version', 'maintainer.name'] }
                       }
                     }
                   ],
@@ -496,8 +497,7 @@ module.exports = {
                               }
                             }
                           }
-                        },
-                        inner_hits : { fields: ['package_name', 'version', 'latest_version', 'maintainer.name'] }
+                        }
                       }
                     }
                   ],
