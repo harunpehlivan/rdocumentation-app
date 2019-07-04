@@ -50,12 +50,15 @@
     "sails": "~0.12.3",
     "sails-hook-sequelize": "^1.0.1",
     "sails-hook-sequelize-blueprints": "^0.3.0",
-    "striptags": "^2.1.1"
+    "striptags": "^2.1.1",
+    "snyk": "^1.189.0"
   },
   "scripts": {
     "debug": "nf start debug",
     "prestart": "node node_modules/db-migrate/bin/db-migrate up",
-    "start": "pm2 start pm2.json --no-daemon"
+    "start": "pm2 start pm2.json --no-daemon",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "main": "app.js",
   "repository": {
@@ -67,5 +70,6 @@
   "devDependencies": {
     "broken-link-checker": "^0.7.2",
     "sitemap-stream": "^2.0.1"
-  }
+  },
+  "snyk": true
 }
