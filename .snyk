@@ -1,0 +1,38 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-567746:
+    - lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - cheerio > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - grunt-apidoc > apidoc > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails > grunt-contrib-less > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails > grunt-contrib-uglify > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails-hook-sequelize > sequelize > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - grunt-apidoc > apidoc > apidoc-core > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - grunt-sass > node-sass > sass-graph > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails > grunt > grunt-legacy-log > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails > sails-generate > sails-generate-generator > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails > skipper > async > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - grunt-apidoc > apidoc > winston > async > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - grunt-sass > node-sass > gaze > globule > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
+    - sails > grunt-contrib-watch > gaze > globule > lodash:
+        patched: '2020-05-01T07:24:00.711Z'
